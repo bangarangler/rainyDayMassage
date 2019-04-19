@@ -4,6 +4,8 @@ import styled from "@emotion/styled"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { PageHeader } from "../utils"
+import blogImg from "../images/bcg/armsOpenSuperKid.jpg"
 
 const BlogPage = () => (
   <Layout>
@@ -11,6 +13,9 @@ const BlogPage = () => (
       title="Home"
       keywords={[`massage`, `massage therapy`, `health`, `therapy`]}
     />
+    <PageHeader img={blogImg}>
+      <p>hello from about page</p>
+    </PageHeader>
     <p>hello from blog page</p>
   </Layout>
 )
