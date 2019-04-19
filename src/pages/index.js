@@ -2,6 +2,7 @@ import React from "react"
 //import styled from "@emotion/styled"
 import { HomeHeader, Banner, BannerButton } from "../utils"
 import img from "../images/bcg/blueUmbrella.jpg"
+import QuickInfo from "../components/HomePageComponents/QuickInfo.js"
 import { styles } from "../utils"
 import { Link } from "gatsby"
 
@@ -43,6 +44,7 @@ const IndexPage = () => (
         </Banner>
       </div>
     </HomeHeader>
+    <QuickInfo />
   </Layout>
 )
 
