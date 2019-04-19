@@ -31,17 +31,15 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
 
   .toggleIcon {
-    font-size: 2.75rem;
+    font-size: 3.5rem;
     color: ${styles.colors.mainBlue};
     cursor: pointer;
     @media (min-width: 768px) {
-      .toggleIcon {
-        display: none;
-      }
+      display: none;
     }
   }
   .logo {
-    max-height: 100px;
-    max-width: 150px;
+    max-height: 80px;
+    max-width: 120px;
   }
 `

@@ -45,7 +45,10 @@ const LinkWrapper = styled.ul`
     list-style: none;
   }
   .navLink {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
     color: ${styles.colors.secondaryBlue};
