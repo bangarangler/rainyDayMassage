@@ -1,8 +1,8 @@
 import React from "react"
+import styled from "@emotion/styled"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -11,8 +11,6 @@ const IndexPage = () => (
       title="Home"
       keywords={[`massage`, `massage therapy`, `health`, `therapy`]}
     />
-    <h1>Hi people</h1>
   </Layout>
 )
-
 export default IndexPage
