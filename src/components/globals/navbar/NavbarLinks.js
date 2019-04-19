@@ -53,14 +53,20 @@ const LinkWrapper = styled.ul`
     padding: 0.5rem 1rem;
     color: ${styles.colors.secondaryBlue};
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     cursor: pointer;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 2%;
     ${styles.transDefault};
     &:hover {
-      background: ${styles.colors.mainGrey};
-      color: ${styles.colors.mainBlue};
+      background: ${styles.colors.secondaryBlue};
+      color: ${styles.colors.mainWhite};
       padding: 0.5rem 1rem 0.5rem 1.3rem;
+      width: 150px;
+      margin: 0 auto;
+      border-radius: 2%;
     }
   }
   height: ${props => (props.open ? "152px" : "0")};
@@ -74,6 +80,7 @@ const LinkWrapper = styled.ul`
       background: ${styles.colors.mainBlack};
       opacity: 0.8;
       padding: 0.5rem 1rem;
+      color: ${styles.colors.mainBlue};
     }
   }
 `

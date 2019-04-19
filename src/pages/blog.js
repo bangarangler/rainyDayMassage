@@ -1,11 +1,19 @@
 import React from "react"
-import styled from "@emotion/styled"
+//import styled from "@emotion/styled"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { PageHeader } from "../utils"
+import { PageHeader, Banner } from "../utils"
 import blogImg from "../images/bcg/armsOpenSuperKid.jpg"
+
+const special = {
+  background: "#05a0d0",
+  opacity: ".7",
+  padding: "1rem",
+  borderRadius: "3%",
+  width: "60%",
+}
 
 const BlogPage = () => (
   <Layout>
@@ -14,9 +22,13 @@ const BlogPage = () => (
       keywords={[`massage`, `massage therapy`, `health`, `therapy`]}
     />
     <PageHeader img={blogImg}>
-      <p>hello from about page</p>
+      <div style={special}>
+        <Banner
+          title="rainy day ramblings"
+          subtitle="thoughts on all the things"
+        />
+      </div>
     </PageHeader>
-    <p>hello from blog page</p>
   </Layout>
 )
 export default BlogPage

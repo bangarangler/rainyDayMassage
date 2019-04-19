@@ -25,13 +25,14 @@ export default class NavbarHeader extends Component {
 }
 
 const HeaderWrapper = styled.div`
-  padding: 0.4rem 1rem;
+  padding: 0.3rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-height: 60px;
 
   .toggleIcon {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: ${styles.colors.mainBlue};
     cursor: pointer;
     @media (min-width: 768px) {
@@ -39,7 +40,7 @@ const HeaderWrapper = styled.div`
     }
   }
   .logo {
-    max-height: 80px;
-    max-width: 120px;
+    max-height: 60px;
+    max-width: 100px;
   }
 `

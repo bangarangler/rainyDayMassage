@@ -1,17 +1,21 @@
 import React from "react"
-import styled from "@emotion/styled"
+//import styled from "@emotion/styled"
+import { PageHeader, Banner } from "../utils"
+import contactImage from "../images/bcg/heroButterfly.jpg"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const CcontactPage = () => (
+const ContactPage = () => (
   <Layout>
     <SEO
       title="Home"
       keywords={[`massage`, `massage therapy`, `health`, `therapy`]}
     />
-    <p>hello from contact page</p>
+    <PageHeader img={contactImage}>
+      <Banner />
+    </PageHeader>
   </Layout>
 )
-export default CcontactPage
+export default ContactPage

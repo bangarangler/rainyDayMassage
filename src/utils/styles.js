@@ -43,5 +43,5 @@ export const border = ({
 }
 
 export const letterSpacing = ({ spacing = ".1rem" }) => {
-  return letterSpacing
+  return `letterSpacing: ${spacing}`
 }

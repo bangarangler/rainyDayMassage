@@ -7,9 +7,10 @@ function HomeHeader({ img, children }) {
 }
 
 const IndexHeader = styled.header`
-  min-height: calc(100vh - 98.4px);
+  min-height: calc(100vh - 60px);
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url(${props => props.img}) center/cover fixed no-repeat;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
   align-items: center;
