@@ -4,7 +4,7 @@ import { HomeHeader, Banner, BannerButton } from "../utils"
 import img from "../images/bcg/blueUmbrella.jpg"
 import QuickInfo from "../components/HomePageComponents/QuickInfo.js"
 import Gallery from "../components/HomePageComponents/Gallery.js"
-import { styles } from "../utils"
+// import { styles } from "../utils"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"

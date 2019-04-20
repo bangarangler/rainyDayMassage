@@ -90,35 +90,35 @@ export default function Gallery() {
             <GalleryWrapper>
               <div className="item item1">
                 <Img fluid={img1} />
-                <p className="info">things</p>
+                <p className="info">Therapy</p>
               </div>
               <div className="item item2">
                 <Img fluid={img2} />
-                <p className="info">thii</p>
+                <p className="info">RDM</p>
               </div>
               <div className="item item3">
                 <Img fluid={img3} />
-                <p className="info">things</p>
+                <p className="info">Monster</p>
               </div>
               <div className="item item4">
                 <Img fluid={img4} />
-                <p className="info">stuff</p>
+                <p className="info">Health</p>
               </div>
               <div className="item item5">
                 <Img fluid={img5} />
-                <p className="info">stuff</p>
+                <p className="info">Massage</p>
               </div>
               <div className="item item6">
                 <Img fluid={img6} />
-                <p className="info">stuff</p>
+                <p className="info">Kaitlyn</p>
               </div>
               <div className="item item7">
                 <Img fluid={img7} />
-                <p className="info">stuff</p>
+                <p className="info">Happy</p>
               </div>
               <div className="item item8">
                 <Img fluid={img8} />
-                <p className="info">stuff</p>
+                <p className="info">Life</p>
               </div>
             </GalleryWrapper>
           </Section>
