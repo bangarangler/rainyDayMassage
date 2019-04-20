@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 
 const SINGLE_IMAGE = graphql`
   {
-    img1: file(relativePath: { eq: "gridGallery/armsOpenSuperKid.jpg" }) {
+    img1: file(relativePath: { eq: "gridGallery/superPower.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -14,7 +14,7 @@ const SINGLE_IMAGE = graphql`
       }
     }
 
-    img2: file(relativePath: { eq: "gridGallery/knightGear.jpg" }) {
+    img2: file(relativePath: { eq: "gridGallery/colorfulDrop.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -22,7 +22,7 @@ const SINGLE_IMAGE = graphql`
       }
     }
 
-    img3: file(relativePath: { eq: "gridGallery/babyOnBoard.jpg" }) {
+    img3: file(relativePath: { eq: "gridGallery/unicornBug.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -30,7 +30,7 @@ const SINGLE_IMAGE = graphql`
       }
     }
 
-    img4: file(relativePath: { eq: "gridGallery/foggyCliffRain.jpg" }) {
+    img4: file(relativePath: { eq: "gridGallery/umbrellaLights.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -38,7 +38,7 @@ const SINGLE_IMAGE = graphql`
       }
     }
 
-    img5: file(relativePath: { eq: "gridGallery/happyHighFive.jpg" }) {
+    img5: file(relativePath: { eq: "gridGallery/blueWords.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -46,7 +46,7 @@ const SINGLE_IMAGE = graphql`
       }
     }
 
-    img6: file(relativePath: { eq: "gridGallery/hurtKnee.jpg" }) {
+    img6: file(relativePath: { eq: "gridGallery/blackPinkTime.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -54,7 +54,7 @@ const SINGLE_IMAGE = graphql`
       }
     }
 
-    img7: file(relativePath: { eq: "gridGallery/raindropCapture.jpg" }) {
+    img7: file(relativePath: { eq: "gridGallery/footHeart.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -135,18 +135,26 @@ const GalleryWrapper = styled.div`
     rgba(51, 255, 202, 0.4),
     rgba(5, 160, 208, 0.9)
   );
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   grid-row-gap: 1rem;
   grid-template-areas:
-    "one"
+    /* "one"
     "two"
     "three"
     "four"
     "five"
     "six"
     "seven"
-    "eight";
+    "eight"; */
+    "one two three four"
+    "five six seven eight";
   /* display: none; */
   .item {
     position: relative;
@@ -191,8 +199,8 @@ const GalleryWrapper = styled.div`
     grid-template-areas:
       "one two two two"
       "six two two two"
-      "seven seven four three"
-      "five five eight eight";
+      "seven seven four four"
+      "five three eight eight";
     .item1 {
       grid-area: one;
     }
@@ -223,24 +231,22 @@ const GalleryWrapper = styled.div`
     grid-template-columns: repeat(6, 1fr);
     /* grid-template-rows: repeat(6, 1fr); */
     grid-gap: 1rem;
-    img {
+    /* img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
-    }
-    .gatsby-image-wrapper {
+    } */
+    /* .gatsby-image-wrapper {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
-    }
+    } */
     grid-template-areas:
-      "one seven seven six six six "
-      "four four two two two two "
-      "four four two two two two "
-      "three three three eight eight eight "
-      "five five five eight eight eight ";
+      "one one five five three three"
+      "four four four seven seven seven"
+      "two two six six eight eight";
     .item1 {
       grid-area: one;
     }
