@@ -5,15 +5,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from "../utils"
-import blogImg from "../images/bcg/armsOpenSuperKid.jpg"
-
-const special = {
-  background: "#05a0d0",
-  opacity: ".7",
-  padding: "1rem",
-  borderRadius: "3%",
-  width: "60%",
-}
+import blogImg from "../images/bcg/endOfPeer.jpg"
 
 const BlogPage = () => (
   <Layout>
@@ -22,12 +14,10 @@ const BlogPage = () => (
       keywords={[`massage`, `massage therapy`, `health`, `therapy`]}
     />
     <PageHeader img={blogImg}>
-      <div style={special}>
-        <Banner
-          title="rainy day ramblings"
-          subtitle="thoughts on all the things"
-        />
-      </div>
+      <Banner
+        title="rainy day ramblings"
+        subtitle="thoughts on all the things"
+      />
     </PageHeader>
   </Layout>
 )
