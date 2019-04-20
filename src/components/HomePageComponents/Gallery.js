@@ -132,7 +132,7 @@ const GalleryWrapper = styled.div`
   display: grid;
   background: linear-gradient(
     to right bottom,
-    rgba(51, 255, 202, 0.8),
+    rgba(51, 255, 202, 0.4),
     rgba(5, 160, 208, 0.9)
   );
   grid-template-columns: repeat(1, 1fr);
@@ -147,7 +147,7 @@ const GalleryWrapper = styled.div`
     "six"
     "seven"
     "eight";
-  display: none;
+  /* display: none; */
   .item {
     position: relative;
   }
@@ -186,13 +186,13 @@ const GalleryWrapper = styled.div`
   }
   @media (min-width: 788px) {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 0;
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-gap: 1rem;
     grid-template-areas:
-      "one one two two"
-      "two two two two"
-      "three three four four"
-      "five five four four";
+      "one two two two"
+      "six two two two"
+      "seven seven four three"
+      "five five eight eight";
     .item1 {
       grid-area: one;
     }
@@ -221,7 +221,7 @@ const GalleryWrapper = styled.div`
   @media (min-width: 992px) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    /* grid-template-rows: repeat(6, 1fr); */
     grid-gap: 1rem;
     img {
       width: 100%;
@@ -236,12 +236,11 @@ const GalleryWrapper = styled.div`
       display: block;
     }
     grid-template-areas:
-      "one one three three six six "
-      "five five three three seven seven "
-      "two two two two seven seven "
-      "two two two two seven seven "
-      "four four four eight eight eight "
-      "four four four eight eight eight ";
+      "one seven seven six six six "
+      "four four two two two two "
+      "four four two two two two "
+      "three three three eight eight eight "
+      "five five five eight eight eight ";
     .item1 {
       grid-area: one;
     }
