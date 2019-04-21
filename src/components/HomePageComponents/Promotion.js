@@ -147,6 +147,9 @@ const PromoWrapper = styled.div`
       background: ${styles.colors.secondaryBlue};
       border: 5px solid ${styles.colors.secondaryBlue};
     }
+    @media (min-width: 400px) {
+      font-size: 2rem;
+    }
     @media (min-width: 992px) {
       width: 60%;
     }
