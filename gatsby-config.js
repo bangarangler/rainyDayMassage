@@ -21,6 +21,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-playground`,
     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
