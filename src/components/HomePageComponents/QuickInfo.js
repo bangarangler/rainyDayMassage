@@ -68,8 +68,9 @@ const QuickInfoWrapper = styled.div`
     width: 80%;
     &:hover {
       background: ${styles.colors.secondaryBlue};
+      -webkit-text-fill-color: ${styles.colors.mainWhite};
       color: ${styles.colors.mainWhite};
-      border: 5px solid ${styles.colors.mainWhite};
+      border: 5px solid ${styles.colors.mainGrey};
     }
   }
 `
