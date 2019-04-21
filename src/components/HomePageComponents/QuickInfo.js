@@ -22,9 +22,7 @@ export default class QuickInfo extends React.Component {
             of Massage!
           </p>
           <Link to="/contact" style={{ textDecoration: "none" }}>
-            <SectionButton style={{ margin: "2rem auto" }}>
-              contact
-            </SectionButton>
+            <SectionButton className="ctBtn">contact</SectionButton>
           </Link>
         </QuickInfoWrapper>
       </Section>
@@ -46,5 +44,32 @@ const QuickInfoWrapper = styled.div`
   }
   @media (min-width: 992px) {
     width: 60%;
+  }
+
+  .ctBtn {
+    margin: 2rem auto;
+    border: 8px solid;
+    background: linear-gradient(
+      to bottom right,
+      rgba(51, 255, 202),
+      rgba(5, 160, 208)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-image: linear-gradient(
+        to bottom right,
+        rgba(51, 255, 202),
+        rgba(5, 160, 208)
+      )
+      1;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+    width: 80%;
+    &:hover {
+      background: ${styles.colors.secondaryBlue};
+      color: ${styles.colors.mainWhite};
+      border: 5px solid ${styles.colors.mainWhite};
+    }
   }
 `
