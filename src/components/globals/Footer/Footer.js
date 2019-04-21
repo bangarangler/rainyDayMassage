@@ -57,7 +57,10 @@ const FooterWrapper = styled.footer`
     "copy";
   justify-items: center;
   align-items: center;
-  grid-gap: 0.5rem;
+  /* grid-gap: 0.5rem; */
+  @media (min-width: 500px) {
+    grid-gap: 0.8rem;
+  }
   .icons {
     width: 10rem;
     grid-area: icons;
@@ -82,7 +85,7 @@ const FooterWrapper = styled.footer`
     text-align: center;
     margin: 0 auto;
     text-transform: uppercase;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
     border: 8px solid;

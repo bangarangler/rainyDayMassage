@@ -164,9 +164,13 @@ const GalleryWrapper = styled.div`
     top: 0;
     left: 0;
     color: ${styles.colors.secondaryBlue};
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     padding: 0.3rem;
     background: white;
+  }
+  @media (min-widht: 576px) {
+    font-size: 1.8rem;
+    padding: 0.3rem;
   }
   img {
     width: 100%;

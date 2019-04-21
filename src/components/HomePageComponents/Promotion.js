@@ -67,7 +67,7 @@ export default function Promotion() {
 }
 
 const PromoWrapper = styled.div`
-  margin: 1rem 0;
+  margin: 1rem auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -137,6 +137,7 @@ const PromoWrapper = styled.div`
 
   .btn {
     margin-top: 3.5rem;
+    grid-area: btn;
     color: ${styles.colors.secondaryBlue};
     border: 5px solid ${styles.colors.secondaryBlue};
     /* background: ${styles.colors.mainBlack}; */
@@ -146,9 +147,13 @@ const PromoWrapper = styled.div`
       background: ${styles.colors.secondaryBlue};
       border: 5px solid ${styles.colors.secondaryBlue};
     }
+    @media (min-width: 992px) {
+      width: 60%;
+    }
   }
   @media (min-width: 576px) {
     grid-template-columns: 95%;
+    justify-content: center;
   }
   @media (min-width: 776px) {
     grid-template-columns: 80%;
@@ -156,6 +161,14 @@ const PromoWrapper = styled.div`
   }
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
+    width: 85%;
+    grid-template-areas:
+    'img title'
+    'price time'
+    'desc desc'
+    'btn btn';
+    justify-items: center;
+    justify-content: center;
     grid-gap: 2rem;
   }
 `

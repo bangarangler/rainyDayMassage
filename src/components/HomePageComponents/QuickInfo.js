@@ -38,6 +38,7 @@ const QuickInfoWrapper = styled.div`
     color: ${styles.colors.mainGrey};
     word-spacing: 0.2rem;
     text-align: center;
+    font-size: 1.3rem;
   }
   @media (min-width: 768px) {
     width: 70%;
