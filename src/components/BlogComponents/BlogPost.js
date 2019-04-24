@@ -50,9 +50,9 @@ class BlogPost extends React.Component {
             {this.props.singleBlog.node.postDescription}
           </p>
           {this.state.show && (
-            <p className="post">
+            <div className="post">
               {this.props.singleBlog.node.blogPost.blogPost}
-            </p>
+            </div>
           )}
 
           <SectionButton className="postBtn" onClick={this.showPost}>
