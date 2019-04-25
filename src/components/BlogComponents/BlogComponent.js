@@ -52,8 +52,8 @@ class BlogComponent extends React.Component {
             return (
               <button
                 type="button"
-                key={index}
                 className="tags"
+                key={index}
                 onClick={() => this.handleTags(tags)}
               >
                 {tags}
@@ -71,12 +71,16 @@ class BlogComponent extends React.Component {
 
 export default BlogComponent
 
-const TagsContainer = styled.dev`
+const TagsContainer = styled.div`
   //border: 1px solid green;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 5%;
+  @media (min-width: 576px) {
+    width: 70%;
+    margin: 5% auto;
+  }
   .tags {
     font-size: 1rem;
     background: ${styles.colors.mainWhite};
@@ -85,7 +89,7 @@ const TagsContainer = styled.dev`
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    /* ${styles.textSlanted}; */
+    //${styles.textSlanted};
     color: ${styles.colors.secondaryBlue};
     cursor: pointer;
     border-radius: 5%;
