@@ -6,16 +6,6 @@ import moment from "moment"
 import styled from "@emotion/styled"
 import { styles } from "../../utils"
 
-// const getTags = blogs => {
-//   let tempBlogs = blogs.map(items => {
-//     return items.node.tagged
-//   })
-//   let tempTagged = new Set(tempBlogs)
-//   let tagged = Array.from(tempTagged)
-//   tagged = ["all", ...tagged]
-//   return tagged
-// }
-
 class BlogPost extends React.Component {
   constructor(props) {
     super(props)
@@ -28,7 +18,6 @@ class BlogPost extends React.Component {
   }
 
   render() {
-    //console.log(this.state.tagged)
     return (
       <PostWrapper>
         {this.props.singleBlog.node.blogImage.map((img, index) => {

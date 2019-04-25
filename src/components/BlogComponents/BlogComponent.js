@@ -43,17 +43,7 @@ class BlogComponent extends React.Component {
     }
   }
 
-  //componentDidUpdate() {
-  //handleTags(tags)
-  //}
-
   render() {
-    //console.log(
-    //this.state.blogs.map(i => {
-    //return i.node.tagged
-    //})
-    //)
-    console.log(this.state.tagged)
     return (
       <Section>
         <Title title="posts" message="stay up to date with our" />
