@@ -28,7 +28,7 @@ class BlogPost extends React.Component {
   }
 
   render() {
-    // console.log(this.props)
+    //console.log(this.state.tagged)
     return (
       <PostWrapper>
         {this.props.singleBlog.node.blogImage.map((img, index) => {
