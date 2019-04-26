@@ -33,7 +33,7 @@ export const query = graphql`
           blogTitle
           postDescription
           blogImage {
-            fixed(width: 300, height: 250) {
+            fixed(width: 250, height: 250) {
               ...GatsbyContentfulFixed_tracedSVG
             }
           }

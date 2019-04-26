@@ -160,11 +160,13 @@ const PostWrapper = styled.div`
     .post {
       //border: 1px solid red;
       padding: 2%;
-      letter-spacing: 0.1rem;
+      letter-spacing: 0.2rem;
       font-size: 1.5rem;
+      line-height: 2rem;
       text-align: center;
       margin: 2% auto;
-      transition: transform 1s ease-in-out;
+      //transition: transform 1s ease-in-out;
+      transition: 2s ease-in-out;
     }
     //.bPost {
     //display: none;

@@ -39,12 +39,17 @@ const QuickInfoWrapper = styled.div`
     word-spacing: 0.2rem;
     text-align: center;
     font-size: 1.3rem;
+    @media (min-width: 768px) {
+      font-size: 2rem;
+      line-height: 2.2rem;
+      letter-spacing: 0.1rem;
+    }
   }
   @media (min-width: 768px) {
     width: 70%;
   }
   @media (min-width: 992px) {
-    width: 60%;
+    width: 80%;
   }
 
   .ctBtn {
