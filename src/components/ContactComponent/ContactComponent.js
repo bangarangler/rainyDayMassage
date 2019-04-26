@@ -2,7 +2,7 @@ import React from "react"
 import { Section, Title } from "../../utils"
 import styled from "@emotion/styled"
 import { styles } from "../../utils"
-import img from "../../images/kat.jpg"
+import img from "../../images/gridTableShop.jpg"
 import shop from "../../images/rainydaysign.jpg"
 
 const ContactComponent = props => {
@@ -23,7 +23,9 @@ const ContactComponent = props => {
       </LocationWrapper>
       <ContactWrapper>
         <h2 className="heading">Kaitlyn Hofmann</h2>
-        <img src={img} alt="Kaitlyn Hofmann" className="kat" />
+        <div className="table">
+          <img src={img} alt="Kaitlyn Hofmann" className="kat" />
+        </div>
         <p className="owner">Owner of Rainy Day Massage</p>
         <div className="textContainer">
           <p className="text">
@@ -69,8 +71,12 @@ const ContactWrapper = styled.div`
     padding: 3%;
     color: ${styles.colors.secondaryBlue};
   }
-  .kat {
+  .table {
   grid-area: katImg;
+    .kat{
+      width: 300px;
+      object-fit: contain;
+    }
   }
   .textContainer {
     grid-area: body;
