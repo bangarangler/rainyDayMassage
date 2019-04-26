@@ -10,7 +10,7 @@ import BlogComponent from "../components/BlogComponents/BlogComponent.js"
 const BlogPage = ({ data }) => (
   <Layout>
     <SEO
-      title="Home"
+      title="Blog"
       keywords={[`massage`, `massage therapy`, `health`, `therapy`]}
     />
     <PageHeader img={blogImg}>
