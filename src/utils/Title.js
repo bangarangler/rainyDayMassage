@@ -1,12 +1,16 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { styles } from "../utils"
+import rainDrop from "../images/rainDropSVG.svg"
 
 export function Title({ title, message }) {
   return (
     <TitleWrapper>
       <h3 className="message">{message}</h3>
-      <h1 className="title">{title}</h1>
+      <div className="container">
+        <h1 className="title">{title}</h1>
+        <img src={rainDrop} alt="rain drop" className="rainDrop" />
+      </div>
       <div className="underline" />
     </TitleWrapper>
   )
@@ -23,6 +27,19 @@ const TitleWrapper = styled.div`
     ${styles.letterSpacing({ spacing: ".5rem" })};
     font-size: 2rem;
     color: ${styles.colors.secondaryBlue};
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 576px) {
+      flex-direction: row;
+    }
+  }
+  .rainDrop {
+    width: 30px;
+    height: 30px;
   }
   .title {
     ${styles.letterSpacing({ spacing: ".5rem" })};
